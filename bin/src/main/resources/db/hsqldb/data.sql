@@ -8,24 +8,6 @@ INSERT INTO authorities(id,username,authority) VALUES (2,'owner1','owner');
 INSERT INTO users(username,password,enabled) VALUES ('vet1','v3t',TRUE);
 INSERT INTO authorities(id,username,authority) VALUES (3,'vet1','veterinarian');
 
-INSERT INTO care(id,name,description) VALUES(1,'Hair brushing','We will brush the hair of your pet.');
-INSERT INTO care(id,name,description) VALUES(2,'Chemical flea removal','We will apply strong chemical products in the hair of your pet to remove any kind of flea or insect present.');
-
-INSERT INTO compatibles (1,1);
-INSERT INTO compatibles (1,2);
-INSERT INTO compatibles (2,1);
-INSERT INTO compatibles (2,2);
-
-INSERT INTO incompatibles(1,2);
-INSERT INTO incompatibles(2,1);
-
-
-
-
-INSERT INTO care_provision(id,visit_id,duration,care_id) VALUES (1,1,0.5,2);
-INSERT INTO care_provision(id,visit_id,duration,care_id) VALUES (2,2,0.25,1);
-
-
 INSERT INTO vets(id, first_name,last_name) VALUES (1, 'James', 'Carter');
 INSERT INTO vets(id, first_name,last_name) VALUES (2, 'Helen', 'Leary');
 INSERT INTO vets(id, first_name,last_name) VALUES (3, 'Linda', 'Douglas');
